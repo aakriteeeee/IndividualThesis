@@ -1,0 +1,229 @@
+/* General Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: inline-block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f8f9fa;
+}
+
+/* Form Styles */
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #0056b3;
+}
+
+/* Profile Styles */
+
+.profile-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.profile-header {
+    text-align: center;
+}
+
+.profile-header h1 {
+    margin-bottom: 10px;
+}
+
+.profile-details {
+    margin-top: 20px;
+}
+
+.profile-details label {
+    font-weight: bold;
+}
+
+/* Health Data Styles */
+
+.health-data-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.health-data-header {
+    text-align: center;
+}
+
+.health-data-header h1 {
+    margin-bottom: 10px;
+}
+
+.health-data-details {
+    margin-top: 20px;
+}
+
+.health-data-details label {
+    font-weight: bold;
+}
+
+/* Doctor Information Styles */
+
+.doctor-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.doctor-header {
+    text-align: center;
+}
+
+.doctor-header h1 {
+    margin-bottom: 10px;
+}
+
+.doctor-details {
+    margin-top: 20px;
+}
+
+.doctor-details label {
+    font-weight: bold;
+}
+
+/* Blog Styles */
+
+.blog-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.blog-header {
+    text-align: center;
+}
+
+.blog-header h1 {
+    margin-bottom: 10px;
+}
+
+.blog-content {
+    margin-top: 20px;
+}
+
+.blog-content h2 {
+    margin-bottom: 10px;
+}
+
+.blog-content p {
+    line-height: 1.5;
+}
+
+/* Footer Styles */
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .form-group button {
+        width: 100%;
+    }
+}

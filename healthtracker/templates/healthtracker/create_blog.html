@@ -1,0 +1,12 @@
+<!-- healthtracker/templates/healthtracker/create_blog.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Create Blog</h2>
+  <form method="post" action="{% url 'create_blog' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Create Blog</button>
+  </form>
+{% endblock %}

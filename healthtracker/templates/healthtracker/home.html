@@ -1,0 +1,32 @@
+<!-- your_app/templates/your_app/home.html -->
+
+{% extends 'healthtracker/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the home page content.</p>
+{% endblock %}
+
+
+<!-- healthtracker/templates/healthtracker/home.html -->
+
+{% extends 'healthtracker/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Welcome to Health Tracker</h2>
+
+{% if user.is_authenticated %}
+    <p>Personalized Recommendations:</p>
+    <ul>
+        {% for recommendation in recommendations %}
+            <li>{{ recommendation }}</li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Please sign in to see personalized recommendations.</p>
+{% endif %}
+{% endblock %}

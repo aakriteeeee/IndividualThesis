@@ -1,0 +1,11 @@
+{% extends 'healthtracker/base.html' %}
+
+{% block content %}
+    <h1>Your Health Data Entries</h1>
+    <ul>
+        {% for entry in health_data_entries %}
+            <li>{{ entry.date }} - Weight: {{ entry.weight }}, Height: {{ entry.height }}, BP: {{ entry.blood_pressure }}, HR: {{ entry.heart_rate }}</li>
+            <!-- Add more fields as needed -->
+        {% endfor %}
+    </ul>
+{% endblock %}

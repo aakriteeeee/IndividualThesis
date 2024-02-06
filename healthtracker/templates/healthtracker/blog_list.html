@@ -1,0 +1,17 @@
+<!-- healthtracker/templates/healthtracker/blog_list.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Blog List</h2>
+  <ul>
+    {% for blog in blogs %}
+      <li>
+        <h3>{{ blog.title }}</h3>
+        <p>{{ blog.content }}</p>
+        <p>Author: {{ blog.author.username }}</p>
+        <p>Published on: {{ blog.publication_date }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}

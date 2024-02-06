@@ -1,0 +1,13 @@
+<!-- healthtracker/templates/healthtracker/register_doctor.html -->
+{% extends 'base.html' %}
+
+{% block title %}Register as Doctor{% endblock %}
+
+{% block content %}
+  <h2>Register as Doctor</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register</button>
+  </form>
+{% endblock %}

@@ -1,0 +1,27 @@
+<!-- healthtracker/templates/healthtracker/doctors_list.html -->
+
+{% extends 'base.html' %}
+
+{% block title %}Doctors List{% endblock %}
+
+{% block content %}
+  <h2>Doctors List</h2>
+
+  <h3>Specialties</h3>
+  <ul>
+    {% for specialty in specialties %}
+      <li>{{ specialty.name }}</li>
+    {% endfor %}
+  </ul>
+
+  <h3>Doctors</h3>
+  <ul>
+    {% for doctor in doctors %}
+      <li>
+        <strong>{{ doctor.name }}</strong>
+        <p>Specialty: {{ doctor.specialty.name }}</p>
+        <p>Description: {{ doctor.description }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
